@@ -16,6 +16,7 @@ export default Controller.extend({
       alert(`Sending text message (${this.get('textMessage')}) from email (${this.get('emailAddress')}) `);
       this.set('responseMessage', `Thank you! We just sent your text (${this.get('textMessage')}) from email (${this.get('emailAddress')})`);
       this.set('emailAddress', '');
+      this.set('textMessage', '');
     }
   }
 
